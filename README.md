@@ -23,6 +23,9 @@ This repository aims to provide a framework for neural network-based program ana
 | 2019 | ICLR 2019    | Neural Program Repair by Jointly Learning to Localize and Repair |                                                          |
 
 
-# Type Inference
+# Type Inference with GNNs
 | Year | Venue        | Paper                                                        | Code                                                         |
 | ---- | ------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 2020 | PLDI 2020    | Typilus: Neural Type Hints                                   |                                                              |
+| 2020 | ICLR 2020    | LAMBDANET: Probabilistic Type Inference Using Graph Neural Networks |                                                       |
+| 2018 | ICLR 2018    | Learning to Represent Programs with Graphs                   |                                                              |
