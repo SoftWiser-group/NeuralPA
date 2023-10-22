@@ -29,3 +29,10 @@ This repository aims to provide a framework for neural network-based program ana
 | 2020 | PLDI 2020    | Typilus: Neural Type Hints                                   |                                                              |
 | 2020 | ICLR 2020    | LAMBDANET: Probabilistic Type Inference Using Graph Neural Networks |                                                       |
 | 2018 | ICLR 2018    | Learning to Represent Programs with Graphs                   |                                                              |
+| 2023 | ASE  2023    | Generative Type Inference for Python                         |                                                              |
+| 2023 | ICLR 2023    | TypeT5: Seq2seq Type Inference using Static Analysis         |                                                              |
+| 2022 | ICSE 2022    | Type4Py: Practical Deep Similarity Learning-Based Type Inference for Python ｜                                              ｜
+| 2022 | ICSE 2022    | Static Inference Meets Deep Learning: A Hybrid Type Inference Approach for Python |                                         |
+| 2022 | TSE  2022    | Learning To Predict User-Defined Types                       |                                                              |
+| 2021 | NeurIPS 2021 | Type Inference as Optimization                               |                                                              |
+| 2018 | ESEC/FSE 2018| Deep Learning Type Inference                                 |                                                              |
