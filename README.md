@@ -100,5 +100,5 @@ This repository aims to provide a framework for neural network-based program ana
 ## Dataset
 | ID |     Name           |     Language    | Argument Type | Return Type | Variable type |     Links      |       Others      |
 | -- | ------------------ | --------------- | ------------- | ----------- | ------------- | -------------- | ----------------- |
-| 1  | ManyTypes4Py       | Python          | 16.06%        | 6.74%       | 77.20%        | [Github]([https://github.com/bears-bugs/bears-benchmark](https://zenodo.org/records/5244636)https://zenodo.org/records/5244636) |  
+| 1  | ManyTypes4Py       | Python          | 16.06%        | 6.74%       | 77.20%        | [Zenodo](https://zenodo.org/records/5244636) |                   |  
 
