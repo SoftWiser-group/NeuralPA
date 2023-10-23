@@ -84,7 +84,7 @@ This repository aims to provide a framework for neural network-based program ana
 
 # Type Inference
 | Year | Venue        | Paper                                                        | Data Format                     | Code                       |
-| ---- | ------------ | ------------------------------------------------------------ | ------------------------------- | -------------------------- |
+| ---- | ------------ | ------------------------------------------------------------ | ------------------------------- | --------|
 | 2020 | PLDI 2020    | Typilus: Neural Type Hints                                   | Graph                           |                            |
 | 2020 | ICLR 2020    | LAMBDANET: Probabilistic Type Inference Using Graph Neural Networks | Graph                    |                            |
 | 2018 | ICLR 2018    | Learning to Represent Programs with Graphs                   | Graph                           |                            |
