@@ -99,7 +99,7 @@ This repository aims to provide a framework for neural network-based program ana
 
 ## Dataset
 
-In order to unify the experimental results, we provide a standard Python type inference dataset ManyTypes4Py for you to use. For the preprocessing of graph and text data, we recommend that you refer to the [Typilus]() and [Type4Py](https://github.com/saltudelft/type4py) code implementations respectively.
+In order to unify the experimental results, we provide a standard Python type inference dataset ManyTypes4Py for you to use. For the preprocessing of graph and text data, we recommend that you refer to the [Typilus](https://github.com/typilus/typilus) and [Type4Py](https://github.com/saltudelft/type4py) code implementations respectively. The details of ManyTypes4Py dataset are shown as follows.
 
 |     Name           |     Language    | Argument Type | Return Type | Variable type |     Links      |       Others      |
 | ------------------ | --------------- | ------------- | ----------- | ------------- | -------------- | ----------------- |
