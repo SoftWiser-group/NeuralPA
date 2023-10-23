@@ -95,3 +95,9 @@ This repository aims to provide a framework for neural network-based program ana
 | 2022 | TSE  2022    | Learning To Predict User-Defined Types                       | Text                            |                            
 | 2021 | NeurIPS 2021 | Type Inference as Optimization                               | Text                            |
 | 2018 | ESEC/FSE 2018| Deep Learning Type Inference                                 | Text                            |
+
+
+## Datasets
+| ID |     Name           |     Language    |    #Bugs    |  Test Suite  |  Training  |  Testing   |     Links      |       Others      |
+| -- | ------------------ | --------------- | ----------- | ------------ | ---------- | ---------- | -------------- | ----------------- |
+| 1  | Bears              | Java            | 251         | yes          | yes        | yes        | [Github](https://github.com/bears-bugs/bears-benchmark) |  
