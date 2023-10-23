@@ -107,3 +107,25 @@ In order to unify the experimental results, we provide a standard Python type in
 
 
 
+# Artificial-Intelligence-in-Compiler-Optimization
+
+| Year | Venue       | Paper                                                        | Code                                                    |
+| ---- | ----------- | ------------------------------------------------------------ | ------------------------------------------------------- |
+| 2024 | ASPLOS 2024 | BaCO: A Fast and Portable Bayesian Compiler Optimization Framework |                                                         |
+| 2023 |             | Large Language Models for Compiler Optimization              |                                                         |
+| 2023 | ICML 2023   | Learning Compiler Pass Orders using Coreset and Normalized Value Prediction |                                                         |
+| 2023 | ICML2023    | Learning Compiler Pass Orders using Coreset and Normalized Value Prediction | [code](https://github.com/facebookresearch/RLCompOpt)   |
+| 2023 | EuroGP 2023 | Genetic Improvement of LLVM Intermediate Representation      |                                                         |
+| 2022 | TACO 2022   | Iterative Compilation Optimization Based on Metric Learning and Collaborative Filtering |                                                         |
+| 2022 | GECOO 2022  | Optimizing LLVM pass sequences with Shackleton: A linear genetic programming framework. |                                                         |
+| 2022 | ISCA 2022   | Autophase V2: Towards Function Level Phase Ordering Optimization |                                                         |
+| 2022 | CGO 2022    | Compilergym: Robust, performant compiler optimization environments for ai research | [code](https://github.com/facebookresearch/CompilerGym) |
+| 2022 | GASES 2022  | Work-in-Progress: MLGOPerf: An ML Guided Inliner to Optimize Performance |                                                         |
+| 2021 | ICML 2021   | ProGraML: A Graph-based Program Representation for Data Flow Analysis and Compiler Optimizations |                                                         |
+| 2021 |             | MLGO: a Machine Learning Guided Compiler Optimizations Framework | [code](https://github.com/google/ml-compiler-opt)       |
+| 2021 | ICSE 2021   | Efficient Compiler Autotuning via Bayesian Optimization      |                                                         |
+| 2021 |             | Customized Monte Carlo Tree Search for LLVM/Polly's Composable Loop Optimization Transformations |                                                         |
+| 2021 | PACT 2021   | A Reinforcement Learning Environment for Polyhedral Optimizations |                                                         |
+| 2020 | LCTES 2020  | A Collaborative Filtering Approach for the Automatic Tuning of Compiler Optimisations |                                                         |
+| 2020 | MLSys 2020  | Autophase: Juggling hls phase orderings in random forests with deep reinforcement learning | [code](https://github.com/ucb-bar/autophase)            |
+| 2020 | CGO 2020    | Neurovectorizer: end-to-end vectorization with deep reinforcement learning |                                                         |
