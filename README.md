@@ -98,9 +98,12 @@ This repository aims to provide a framework for neural network-based program ana
 
 
 ## Dataset
-| ID |     Name           |     Language    | Argument Type | Return Type | Variable type |     Links      |       Others      |
-| -- | ------------------ | --------------- | ------------- | ----------- | ------------- | -------------- | ----------------- |
-| 1  | ManyTypes4Py       | Python          | 16.06%        | 6.74%       | 77.20%        | [Zenodo](https://zenodo.org/records/5244636) |                   |  
 
-This repository aims to provide a framework for neural network-based program analysis, making it easy for people to build neural networks and experiment with them.
+In order to unify the experimental results, we provide a standard Python type inference dataset ManyTypes4Py for you to use. For the preprocessing of graph and text data, we recommend that you refer to the [Typilus]() and [Type4Py](https://github.com/saltudelft/type4py) code implementations respectively.
+
+|     Name           |     Language    | Argument Type | Return Type | Variable type |     Links      |       Others      |
+| ------------------ | --------------- | ------------- | ----------- | ------------- | -------------- | ----------------- |
+| ManyTypes4Py       | Python          | 16.06%        | 6.74%       | 77.20%        | [Zenodo](https://zenodo.org/records/5244636) |                   |  
+
+
 
