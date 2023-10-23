@@ -5,6 +5,7 @@ This repository aims to provide a framework for neural network-based program ana
 # Table of contents
 - [Automatic Program Repair](#automatic-program-repair)
 - [Type Inference](#type-inference)
+- [Artificial-Intelligence-in-Compiler-Optimization](#Artificial-Intelligence-in-Compiler-Optimization)
 
 # Automatic Program Repair
 | Year | Venue        | Paper                                                        | Code                                                         |
