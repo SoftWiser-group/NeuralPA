@@ -102,3 +102,5 @@ This repository aims to provide a framework for neural network-based program ana
 | -- | ------------------ | --------------- | ------------- | ----------- | ------------- | -------------- | ----------------- |
 | 1  | ManyTypes4Py       | Python          | 16.06%        | 6.74%       | 77.20%        | [Zenodo](https://zenodo.org/records/5244636) |                   |  
 
+This repository aims to provide a framework for neural network-based program analysis, making it easy for people to build neural networks and experiment with them.
+
