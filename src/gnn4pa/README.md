@@ -5,10 +5,10 @@ This repository aims to summarize and evaluate the graph-based program analysis 
 # Table of contents
 - [Code Embedding](#code-embedding) - Linyang Wu
 - [Bug Detection](#bug-detection) - Qiubo Wang
-- [Code Clone Detection](#clone-detection) - Zhuofan Xiao
+- [Code Clone Detection](#code-clone-detection) - Zhuofan Xiao
 - [Type Inference](#type-inference) - Yingkai Shi
 - [Code Summarization](#code-summarization) - Chi Xiao
-- [Vulnerability Detection?](#vulnerability-detection) - Xingyu Lu
+- [Vulnerability Detection](#vulnerability-detection) - Xingyu Lu
 
 # Code Embedding
 | Year | Venue        | Paper                                                        | Code                                                         |
@@ -33,4 +33,4 @@ This repository aims to summarize and evaluate the graph-based program analysis 
 # Code Summarization
 
 
-#
+# Vulnerability Detection?
