@@ -1,1 +1,1 @@
-# Graph-based code embedding
+# Graph-based bug detection
