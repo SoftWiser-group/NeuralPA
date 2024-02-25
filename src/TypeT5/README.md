@@ -29,6 +29,7 @@ This repo contains the source code for the paper [TypeT5: Seq2seq Type Inference
 * collect_dataset.py: 下载开源的 github 仓库作为模型的训练数据，并进行简单筛选，数据集保存在 ManyTypes4Py 文件夹下
 * prepare_dataset.py: 将划分的数据集划分为训练集、验证集、测试集
 ![img.png](static/manyTypes4Py.png)
+
 * run_typet5.py:加载已有模型并对进行使用, 测试效果如下：
 ![img.png](static/runModel.png)
 * train_model.py: 训练模型（包括对数据集进行 tokenize）
