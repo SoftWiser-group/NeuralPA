@@ -1,0 +1,33 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+mypy = "~=0.971"
+typet5 = {editable = true, path = "."}
+tqdm = "*"
+types-all = "*"
+dateparser = "~=1.1.1"
+pyrsistent = "*"
+plotly = "~=5.10"
+pandas = "~=1.4"
+ipywidgets = "~=8.0"
+datasets = "~=2.4.0"
+transformers = "~=4.21.3"
+wandb = "~=0.13.2"
+libcst = "<=0.4.2"
+pytorch-lightning = "~=1.7.5"
+colored = "~=1.4"
+ipykernel = "*"
+termcolor = "~=1.0"
+prettytable = "~=3.4.1"
+huggingface-hub = "*"
+
+[dev-packages]
+pytest = "*"
+black = "*"
+exceptiongroup = "*"
+
+[requires]
+python_version = "3.10"
