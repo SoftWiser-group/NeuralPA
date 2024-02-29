@@ -1,14 +1,13 @@
 # FastSMT
 
 This is the tool released in the NeurIPS'18 paper：[Learning to Solve SMT Formulas](https://www.sri.inf.ethz.ch/publications/balunovic2018learnsmt)
-
 repo：https://github.com/eth-sri/fastsmt.git
 
 ## 方法介绍
 
 FastSMT是使用学习方法在特定SMT公式集上训练，以此生成能够快速解决该公式集公式的求解策略的程序。其方法主要分为两个阶段，即带参Tactic序列生成阶段和决策树合成Strategy阶段。
 
-![image](https://github.com/Wang-hn/imgs/blob/main/NeuralPA/type4py.png)
+![image](https://github.com/Wang-hn/imgs/blob/main/NeuralPA/fastsmt.png)
 
 第一个阶段通过进化搜索方法探索可能的Tactic决策序列，根据求解公式的情况，以Tactic的embedding和公式的probe信息等内容生成训练数据，并用这些数据训练神经网络，从而指导公式对当前所用的Tactic进行选择。在该过程中，程序会对每个公式收集在生成过程中表现最好的Tactic序列，并用这些序列作为第二个阶段的输入，通过一种类决策树的数据结构处理序列，合成出一个在数据集上表现良好的可解释的Strategy。
 
