@@ -1,0 +1,52 @@
+name: Docker Build
+
+on:
+  push:
+    tags: ["v[0-9]+.[0-9]+.[0-9]+"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Parse version info from tag
+        run: |
+          # GITHUB_REF is like refs/tags/v2.3.5, so strip the first 11 chars
+          VERSION=${GITHUB_REF:11}
+          echo "version=$VERSION" >> $GITHUB_ENV
+
+      - name: Download the model's files and extract them
+        run: |
+          wget https://type4py.com/pretrained_models/type4py_model_files_v0.1.tar.gz
+          tar -xvzf type4py_model_files_v0.1.tar.gz
+          rm type4py_model_files_v0.1.tar.gz
+
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GH_TOKEN }}
+
+      - name: Build Docker image
+        run: |
+          IMG=ghcr.io/${{ github.repository }}
+          docker build \
+            --tag $IMG:${{ env.version }} \
+            --tag $IMG:latest \
+            .
+      - name: Run Docker image
+        run: |
+          IMG=ghcr.io/${{ github.repository }}
+          docker run -d -p 5001:5010 $IMG
+          
+      - name: Perform integration test
+        run: |
+          pip install pytest requests
+          cd ./type4py/server/tests/ && pytest test_local_server.py --env "local" && cd -
+
+      - name: Push Docker image to ghcr.io
+        run: |
+          IMG=ghcr.io/${{ github.repository }}
+          docker push --all-tags $IMG
