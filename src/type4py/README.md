@@ -5,7 +5,7 @@ Github repo: [https://github.com/saltudelft/type4py/](https://github.com/saltude
 
 ## 方法说明
 
-![imgs from type4py](https://github.com/Wang-hn/imgs/blob/main/NeuralPA/fastsmt.png)
+![imgs from type4py](https://github.com/Wang-hn/imgs/blob/main/NeuralPA/type4py.png)
 
 该工具为了解决动态语言中缺乏静态类型支持的问题，提出了一种基于学习的针对python语言的类型推断方案。其将python源代码中的上下文信息分割作为语料，先使用如stop word removal、lemmatization等传统NLP方法对数据进行清洗后，使用Word2Vec将其转化为词向量表。
 
