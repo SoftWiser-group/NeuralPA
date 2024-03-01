@@ -1,0 +1,27 @@
+name: Type4Py Server
+
+on:
+  schedule:
+  - cron: "* 1 * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.8]
+
+    steps:
+    - uses: actions/checkout@v2.5.0
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v4.3.1
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install pytest requests
+    - name: Test with pytest
+      run: |
+        cd type4py/server/tests
+        pytest test_server.py 

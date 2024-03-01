@@ -1,0 +1,14 @@
+# By default, model's path points to the local model in the Docker image
+# It can be overriden by providing an ENV. variable T4Py_MODEL_PATH
+MODEL_PATH = "/type4py/t4py_model_files/"
+RATE_LIMIT = false
+PRE_READ_TYPE_CLUSTER = false
+MAX_LOC = 1000
+DEVICE = "cpu"
+
+# Database credentials are provided by passing ENV. variables
+# The local model does not need a DB connection.
+DB_ADDR = ""
+DB_NAME = ""
+DB_USER = ""
+DB_PASS = ""
