@@ -1,0 +1,40 @@
+[project]
+authors = [
+  {name = "Yuxiang Wei", email = "ywei40@illinois.edu"},
+]
+
+description = "Fusing Large Language Models with Completion Engines for Automated Program Repair"
+dynamic = ["dependencies"]
+name = "repilot"
+readme = "README.md"
+requires-python = ">=3.10"
+version = "0.0.0"
+
+[project.urls]
+"Homepage" = "https://github.com/UniverseFly/Repilot"
+
+[tool.setuptools.packages.find]
+include = ["repilot"]
+where = ["src"]
+
+[tool.black]
+include = '\.pyi?$'
+line-length = 88
+target-version = ["py310"]
+
+[tool.isort]
+line_length = 88
+profile = "black"
+skip_gitignore = true
+
+[tool.mypy]
+check_untyped_defs = true
+follow_imports = "silent"
+ignore_missing_imports = true
+modules = ["main"]
+mypy_path = "src"
+packages = ["repilot"]
+python_version = "3.10"
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
