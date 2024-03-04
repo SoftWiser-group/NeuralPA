@@ -137,7 +137,7 @@ def repo_to_tk_srcs(
             if len(annots_info) == 0:
                 continue  # skip files with no label
             for info in annots_info:
-                # the current implementation invalidates the src locations
+                # the current implementation invalidates the models locations
                 info.annot_range = None
             types_str = [
                 main_m.code_for_node(not_none(info.annot).annotation)

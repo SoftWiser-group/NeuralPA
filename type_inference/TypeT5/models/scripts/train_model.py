@@ -1,6 +1,4 @@
 # %%
-import os
-from typing import *
 
 from termcolor import colored
 
@@ -10,7 +8,7 @@ from typet5.data import (
     get_tk_dataset_name,
     load_tokenized_srcsets,
 )
-from typet5.experiments.typet5 import TypeT5Configs
+from evaluators.experiments.typet5 import TypeT5Configs
 from typet5.model import DecodingArgs, ModelWrapper
 from typet5.train import TypeCheckArgs
 from typet5.utils import *
@@ -90,7 +88,7 @@ import wandb
 # %%
 # -----------------------------------------------------------
 # train the model
-from typet5.train import ModelTrainingArgs, TypeCheckArgs, train_spot_model
+from typet5.train import ModelTrainingArgs, train_spot_model
 from typet5.utils import run_long_task
 
 if not eval_only:

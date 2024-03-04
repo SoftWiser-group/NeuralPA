@@ -1,15 +1,13 @@
 import json
 from tqdm import tqdm
-import ast
 import traceback
-import torch
-from transformers import RobertaTokenizer, RobertaForMaskedLM, T5ForConditionalGeneration
+from transformers import RobertaTokenizer, T5ForConditionalGeneration
 from transformers import AutoModelForCausalLM, AutoTokenizer
 import torch
 from unixcoder import UniXcoder
 import re
 from incoder import infill
-from config import datafiles, cache_dir
+from config.config import datafiles, cache_dir
 import argparse
 
 DEVICE = "cuda:0" if torch.cuda.is_available() else "cpu"

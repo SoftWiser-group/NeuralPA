@@ -2,8 +2,7 @@ import subprocess
 
 import requests
 
-from typet5.experiments.type4py import Type4PyEvalResult, Type4PySupportedSyntax
-from typet5.experiments.utils import SupportedSyntax, remove_newer_syntax
+from evaluators.experiments import Type4PyEvalResult, Type4PySupportedSyntax
 from typet5.function_dataset import SignatureMap
 from typet5.static_analysis import (
     ElemSignature,
@@ -105,7 +104,7 @@ def run_hityper(repo: Path, out_dir: Path, python_path: Path) -> SignatureMap:
             out_dir.resolve(),
         ],
         cwd=out_dir,
-        # env={"PYTHONPATH": "src"},
+        # env={"PYTHONPATH": "models"},
         capture_output=True,
     )
     if out.returncode != 0:

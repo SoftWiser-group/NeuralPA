@@ -118,7 +118,7 @@ def mk_testset_from_repos(name="InferTypes4Py", repos: Sequence[Path] | None = N
     dest.mkdir(parents=True)
     for root in repos:
         root = proj_root()
-        shutil.copytree(root / "src", dest / "src")
+        shutil.copytree(root / "models", dest / "models")
         shutil.copytree(root / "tests", dest / "tests")
         return dest
 

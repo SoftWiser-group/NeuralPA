@@ -1,6 +1,6 @@
 # TypeT5: Seq2seq Type Inference using Static Analysis
 
-<img src="data/TypeT5-Workflow.png" width="600" alt="TypeT5 Workflow">
+<img src="static/TypeT5-Workflow.png" width="600" alt="TypeT5 Workflow">
 
 This repo contains the source code for the paper [TypeT5: Seq2seq Type Inference using Static Analysis](https://openreview.net/forum?id=4TyNEhI2GdN&noteId=EX_-kP9xah).
 
@@ -18,19 +18,25 @@ This repo contains the source code for the paper [TypeT5: Seq2seq Type Inference
 
 ## 一、基本文件夹说明
 * config：根目录配置文件
-* data：演示模型时的输入样例代码以及训练模型时所用的github 仓库信息
-* MrVPlusOne: 从huggingFace 上下载的训练好的开源模型
-* scripts: 模型调用代码，包括模型训练、微调、实验代码
-* src： 模型基础的源代码
+* data：演示模型时的输入样例代码以及训练模型时所用的 Github 仓库信息
+* model：模型源代码以及运行文件
+  * MrVPlusOne: 从 HuggingFace 上下载的训练好的开源模型（需自行下载）
+  * scripts: 模型调用代码，包括模型训练、微调、实验代码
+
+* evaluators： 测试代码、实验测试
 
 ## 二、scripts 基本内容说明
  注意：*.ipynb 文件为开源代码内容（可能无法直接运行），*.py 文件为本人根据代码实际运行情况，注释、修改的代码，基本说明如下：
- 
+
 * collect_dataset.py: 下载开源的 github 仓库作为模型的训练数据，并进行简单筛选，数据集保存在 ManyTypes4Py 文件夹下
 * prepare_dataset.py: 将划分的数据集划分为训练集、验证集、测试集
-/ ![img.png](static/manyTypes4Py.png) 
-* run_typet5.py:加载已有模型并对进行使用, 测试效果如下：
+
+![img.png](static/manyTypes4Py.png)
+
+* run_typet5.py:加载已有模型并对进行使用, 测试效果如下
+
 ![img.png](static/runModel.png)
+
 * train_model.py: 训练模型（包括对数据集进行 tokenize）
 ![img.png](static/GeneratingTokenizedSrcSets.png)
 ![img.png](static/GeneratingTokenizedSrcSets.png2.png)

@@ -536,9 +536,9 @@ class PythonProject:
         ),
     ) -> "PythonProject":
         """
-        - `root` is typically the `src/` directory or just the root of the project.
+        - `root` is typically the `models/` directory or just the root of the project.
         - `src2module` is used to parse a file into a CST Module, otpionally performing
-        any preprocessing transformations. The src will be discarded if this function returns None.
+        any preprocessing transformations. The models will be discarded if this function returns None.
         """
         modules = dict()
         src_map = dict[ModuleName, Path]()
@@ -611,7 +611,7 @@ class PythonProject:
     def rel_path_to_module_name(rel_path: Path) -> ModuleName:
         parts = rel_path.parts
         assert parts[-1].endswith(".py")
-        if parts[0] == "src":
+        if parts[0] == "models":
             parts = parts[1:]
         if parts[-1] == "__init__.py":
             return ".".join(parts[:-1])
@@ -1851,6 +1851,6 @@ class AnnotRemover(cst.CSTTransformer):
 
 
 def guess_src_root(proj_root: Path):
-    if (proj_root / "src").exists():
-        return proj_root / "src"
+    if (proj_root / "models").exists():
+        return proj_root / "models"
     return proj_root

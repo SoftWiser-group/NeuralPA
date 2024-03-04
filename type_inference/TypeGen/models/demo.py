@@ -1,15 +1,12 @@
-import numpy as np
 import argparse
-from collections import Counter
 import jieba
 import json
 from tqdm import tqdm
 import numpy as np
 from fastbm25 import fastbm25
 from collections import defaultdict
-from multiprocessing import Pool
 import os
-from config import datafiles
+from config.config import datafiles
 
 
 def partition_arg_topK(matrix, K, axis=1):

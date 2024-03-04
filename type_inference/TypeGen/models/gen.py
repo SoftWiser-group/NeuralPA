@@ -1,18 +1,11 @@
 import json
-from ast_operation import AnnotationMask
 from tqdm import tqdm
-import ast
-import traceback
-from transformers import RobertaTokenizer, RobertaForMaskedLM, T5ForConditionalGeneration
 from transformers import AutoModelForCausalLM, AutoTokenizer
 import torch
-from unixcoder import UniXcoder
-import re
-from incoder import infill
 from typegen import construct_cot_prompt, construct_regular_prompt
 import os
 import argparse
-from config import datafiles, cache_dir
+from config.config import datafiles, cache_dir
 
 
 os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3"

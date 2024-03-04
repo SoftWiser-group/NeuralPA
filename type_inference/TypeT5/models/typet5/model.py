@@ -241,7 +241,7 @@ class ModelWrapper:
         max_labels: Optional[int] = None,
         tqdm_args: dict = {},
     ) -> DatasetPredResult:
-        """Convinient method to preprocess the src according to the model's ctx_args and evaluate the (R0) accuracy."""
+        """Convinient method to preprocess the models according to the model's ctx_args and evaluate the (R0) accuracy."""
         ctx_args = self.args.ctx_args
         if max_labels is not None:
             ctx_args = copy(ctx_args)

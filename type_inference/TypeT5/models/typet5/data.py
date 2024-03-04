@@ -417,7 +417,7 @@ class TokenizedSrcSet:
         for src in self.all_srcs:
             if src.file == file:
                 return src
-        raise ValueError(f"No src found for {file}")
+        raise ValueError(f"No models found for {file}")
 
     def repos2srcs(self):
         r = groupby(self.all_srcs, lambda s: s.repo)
@@ -719,7 +719,7 @@ class TokenizedSrcSet:
             repo_list,
             [preprocess_args] * len(srcs),
             max_workers=max_workers,
-            desc="parse src code",
+            desc="parse models code",
             tqdm_args=tqdm_args,
         )
 

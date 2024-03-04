@@ -36,8 +36,8 @@ def test_path_to_module():
     assert to_module(Path("a/b/c.py")) == "a.b.c"
     assert to_module(Path("a/__init__.py")) == "a"
     assert to_module(Path("a/b/__init__.py")) == "a.b"
-    assert to_module(Path("src/a.py")) == "a"
-    assert to_module(Path("src/a/__init__.py")) == "a"
+    assert to_module(Path("models/a.py")) == "a"
+    assert to_module(Path("models/a/__init__.py")) == "a"
 
 
 def to_abs(module_name: ModuleName, import_name: str):

@@ -1,6 +1,6 @@
 import requests
 
-from typet5.experiments.utils import SupportedSyntax, remove_newer_syntax
+from evaluators.experiments import SupportedSyntax, remove_newer_syntax
 from typet5.function_dataset import SignatureMap
 from typet5.static_analysis import (
     ElemSignature,

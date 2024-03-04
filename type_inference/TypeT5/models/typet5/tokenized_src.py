@@ -19,7 +19,7 @@ TokenSeq = list[int]  # might need to make this more space-efficient
 
 @dataclass
 class TokenizedSrc:
-    """A src file with certain type annotations masked out."""
+    """A models file with certain type annotations masked out."""
 
     file: Path
     repo: Path

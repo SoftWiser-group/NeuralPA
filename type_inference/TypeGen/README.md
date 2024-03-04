@@ -6,7 +6,7 @@ Github repo: https://github.com/JohnnyPeng18/TypeGen?tab=readme-ov-file
 # 代码说明
 
 ## 1. 方法流程
-![img.png](img.png)
+![img.png](static/img.png)
 
 个人理解 TypeGen 可以归属为的 prompt 工程，通过在目标变量提示(新问题)之前添加一些感知领域知识的示例提示(示例问题和答案)来构造输入提示，然后利用已有的预训练模型进行类型推断（代码中使用的是 openAi api接口）。<br />
 

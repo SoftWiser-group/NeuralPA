@@ -4,10 +4,9 @@ import json
 from tqdm import tqdm
 import time
 import timeout_decorator
-import base64
 import traceback
 import argparse
-from config import openai_keys, max_retry, error_sleep, normal_sleep, datafiles, chatgpt, gpt3
+from config.config import openai_keys, max_retry, error_sleep, normal_sleep, datafiles, chatgpt, gpt3
 
 api_index = 0
 

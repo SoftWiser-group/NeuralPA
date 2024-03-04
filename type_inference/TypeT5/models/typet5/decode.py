@@ -80,7 +80,7 @@ def incr_inference_with_feedback(
     def maybe_log(src_id, lid, name, fn) -> None:
         if log_to is None or lid >= 10:
             return
-        with (log_to / f"src-{src_id}.txt").open("a") as file:
+        with (log_to / f"models-{src_id}.txt").open("a") as file:
             file.write(f"<========== (label_id={lid}) {name} ==========>\n")
             content = fn()
             content = content if isinstance(content, str) else str(content)
@@ -175,7 +175,7 @@ def incr_inference_with_feedback(
                         [(lid, lid + 1)] * N,
                     )
                     critic_inputs_metas = list(critic_inputs_metas)
-                    # there should only be one chunk for each src
+                    # there should only be one chunk for each models
                     all_inputs = [get_single(xs) for xs, _ in critic_inputs_metas]
                     all_meta = [get_single(xs) for _, xs in critic_inputs_metas]
                     assert_eq(len(all_inputs), len(all_meta), N)
@@ -531,8 +531,8 @@ def to_critic_inputs(
     labels_range: tuple[int, int] | None = None,
 ):
     """
-    Patch each src with the type checker feedbacks and inline the previous predicitons,
-    then break the src into one (if short enough) or more chunks.
+    Patch each models with the type checker feedbacks and inline the previous predicitons,
+    then break the models into one (if short enough) or more chunks.
     """
     errors, current_code = check_r
     fdbks = [] if isinstance(errors, str) else errors

@@ -19,7 +19,7 @@ os.chdir(proj_root())
 
 # download or load the model
 # wrapper = ModelWrapper.load_from_hub("MrVPlusOne/TypeT5-v7")
-model_path = "./MrVPlusOne/TypeT5-v7"
+model_path = "models/MrVPlusOne/TypeT5-v7"
 absolute_path = Path(model_path).resolve()
 wrapper = ModelWrapper.load(absolute_path)
 device = torch.device(f"cuda" if torch.cuda.is_available() else "cpu")
