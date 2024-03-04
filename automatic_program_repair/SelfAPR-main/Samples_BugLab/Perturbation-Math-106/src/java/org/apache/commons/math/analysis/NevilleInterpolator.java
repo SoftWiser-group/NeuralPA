@@ -1,0 +1,1 @@
+[BugLab_Argument_Swapping]^p = new PolynomialFunctionLagrangeForm ( y, x ) ;^50^^^^^46^52^p = new PolynomialFunctionLagrangeForm ( x, y ) ;^[CLASS] NevilleInterpolator  [METHOD] interpolate [RETURN_TYPE] UnivariateRealFunction   double[] x double[] y [VARIABLES] boolean  double[]  x  y  long  serialVersionUID  PolynomialFunctionLagrangeForm  p  

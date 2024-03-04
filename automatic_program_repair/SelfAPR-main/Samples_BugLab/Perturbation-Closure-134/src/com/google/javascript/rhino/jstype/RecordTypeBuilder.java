@@ -1,0 +1,3 @@
+[BugLab_Wrong_Operator]^if  ( properties.size (  )  != 0 )  {^75^^^^^73^80^if  ( properties.size (  )  == 0 )  {^[CLASS] RecordTypeBuilder  [METHOD] build [RETURN_TYPE] JSType   [VARIABLES] Map  properties  JSTypeRegistry  registry  boolean  
+[BugLab_Wrong_Literal]^if  ( properties.size (  )  == -1 )  {^75^^^^^73^80^if  ( properties.size (  )  == 0 )  {^[CLASS] RecordTypeBuilder  [METHOD] build [RETURN_TYPE] JSType   [VARIABLES] Map  properties  JSTypeRegistry  registry  boolean  
+[BugLab_Argument_Swapping]^return properties.createRecordType ( registry ) ;^79^^^^^73^80^return registry.createRecordType ( properties ) ;^[CLASS] RecordTypeBuilder  [METHOD] build [RETURN_TYPE] JSType   [VARIABLES] Map  properties  JSTypeRegistry  registry  boolean  

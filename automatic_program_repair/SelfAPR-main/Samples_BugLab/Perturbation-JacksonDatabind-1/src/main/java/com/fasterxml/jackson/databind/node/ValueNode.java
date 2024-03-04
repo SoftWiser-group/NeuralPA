@@ -1,0 +1,5 @@
+[BugLab_Argument_Swapping]^serialize ( provider, jg ) ;^38^^^^^33^40^serialize ( jg, provider ) ;^[CLASS] ValueNode  [METHOD] serializeWithType [RETURN_TYPE] void   JsonGenerator jg SerializerProvider provider TypeSerializer typeSer [VARIABLES] boolean  TypeSerializer  typeSer  JsonGenerator  jg  SerializerProvider  provider  
+[BugLab_Wrong_Literal]^return true;^72^^^^^70^73^return false;^[CLASS] ValueNode  [METHOD] has [RETURN_TYPE] boolean   int index [VARIABLES] boolean  int  index  
+[BugLab_Wrong_Literal]^return true;^78^^^^^76^79^return false;^[CLASS] ValueNode  [METHOD] hasNonNull [RETURN_TYPE] boolean   int index [VARIABLES] boolean  int  index  
+[BugLab_Wrong_Literal]^return true;^96^^^^^94^97^return false;^[CLASS] ValueNode  [METHOD] has [RETURN_TYPE] boolean   String fieldName [VARIABLES] boolean  String  fieldName  
+[BugLab_Wrong_Literal]^return true;^102^^^^^100^103^return false;^[CLASS] ValueNode  [METHOD] hasNonNull [RETURN_TYPE] boolean   String fieldName [VARIABLES] boolean  String  fieldName  

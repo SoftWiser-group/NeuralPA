@@ -1,0 +1,4 @@
+[BugLab_Argument_Swapping]^super ( contents, spec ) ;^60^^^^^59^61^super ( spec, contents ) ;^[CLASS] RequestBody Builder  [METHOD] <init> [RETURN_TYPE] Map)   RequestBodySpec spec Object> contents [VARIABLES] boolean  RequestBodySpec  spec  Map  contents  
+[BugLab_Variable_Misuse]^return new RequestBody ( null, contents ) ;^55^^^^^54^56^return new RequestBody ( spec, contents ) ;^[CLASS] RequestBody Builder  [METHOD] build [RETURN_TYPE] RequestBody   [VARIABLES] boolean  
+[BugLab_Argument_Swapping]^return new RequestBody ( contents, spec ) ;^55^^^^^54^56^return new RequestBody ( spec, contents ) ;^[CLASS] RequestBody Builder  [METHOD] build [RETURN_TYPE] RequestBody   [VARIABLES] boolean  
+[BugLab_Argument_Swapping]^return new RequestBody ( contents, spec ) ;^55^^^^^54^56^return new RequestBody ( spec, contents ) ;^[CLASS] Builder  [METHOD] build [RETURN_TYPE] RequestBody   [VARIABLES] boolean  

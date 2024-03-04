@@ -1,0 +1,1 @@
+[BugLab_Argument_Swapping]^super ( objectType, registry ) ;^58^^^^^56^60^super ( registry, objectType ) ;^[CLASS] ParameterizedType  [METHOD] <init> [RETURN_TYPE] JSType)   JSTypeRegistry registry ObjectType objectType JSType parameterType [VARIABLES] ObjectType  objectType  JSTypeRegistry  registry  JSType  parameterType  boolean  long  serialVersionUID  

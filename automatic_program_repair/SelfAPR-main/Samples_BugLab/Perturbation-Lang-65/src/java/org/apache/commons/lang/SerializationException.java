@@ -1,0 +1,1 @@
+[BugLab_Argument_Swapping]^super ( cause, msg ) ;^72^^^^^71^73^super ( msg, cause ) ;^[CLASS] SerializationException  [METHOD] <init> [RETURN_TYPE] Throwable)   String msg Throwable cause [VARIABLES] Throwable  cause  String  msg  boolean  long  serialVersionUID  

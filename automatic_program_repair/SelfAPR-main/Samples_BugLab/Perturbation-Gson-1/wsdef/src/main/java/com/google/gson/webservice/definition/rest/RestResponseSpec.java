@@ -1,0 +1,1 @@
+[BugLab_Argument_Swapping]^return String.format ( "{headersSpec:%s,resourceType:%s}", resourceType, headersSpec ) ;^46^^^^^45^47^return String.format ( "{headersSpec:%s,resourceType:%s}", headersSpec, resourceType ) ;^[CLASS] RestResponseSpec  [METHOD] toString [RETURN_TYPE] String   [VARIABLES] Type  resourceType  HeaderMapSpec  headersSpec  boolean  

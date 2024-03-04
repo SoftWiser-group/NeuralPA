@@ -1,0 +1,1 @@
+[BugLab_Argument_Swapping]^return new MultiANewArrayInsnNode ( dims, desc ) ;^75^^^^^74^76^return new MultiANewArrayInsnNode ( desc, dims ) ;^[CLASS] MultiANewArrayInsnNode  [METHOD] clone [RETURN_TYPE] AbstractInsnNode   Map labels [VARIABLES] String  desc  boolean  Map  labels  int  dims  

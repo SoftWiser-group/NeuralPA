@@ -1,0 +1,1 @@
+[BugLab_Variable_Misuse]^RequestBodySpec spec = new RequestBodySpec ( 4 ) ;^37^^^^^36^39^RequestBodySpec spec = new RequestBodySpec ( paramsSpec ) ;^[CLASS] Builder  [METHOD] build [RETURN_TYPE] RequestBodySpec   [VARIABLES] RequestBodySpec  spec  Map  paramsSpec  boolean  

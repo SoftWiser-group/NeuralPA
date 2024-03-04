@@ -1,0 +1,1 @@
+[BugLab_Argument_Swapping]^super ( value, key ) ;^40^^^^^39^41^super ( key, value ) ;^[CLASS] UnmodifiableMapEntry  [METHOD] <init> [RETURN_TYPE] UnmodifiableMapEntry(K,V)   final K key final V value [VARIABLES] boolean  V  value  K  key  

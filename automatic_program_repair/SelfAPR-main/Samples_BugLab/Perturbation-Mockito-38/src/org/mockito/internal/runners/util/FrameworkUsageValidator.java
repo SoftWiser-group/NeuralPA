@@ -1,0 +1,1 @@
+[BugLab_Argument_Swapping]^notifier.fireTestFailure ( new Failure ( t, description )  ) ;^27^^^^^22^29^notifier.fireTestFailure ( new Failure ( description, t )  ) ;^[CLASS] FrameworkUsageValidator  [METHOD] testFinished [RETURN_TYPE] void   Description description [VARIABLES] Throwable  t  RunNotifier  notifier  Description  description  boolean  

@@ -1,0 +1,1 @@
+[BugLab_Argument_Swapping]^super ( lock, bag ) ;^73^^^^^72^74^super ( bag, lock ) ;^[CLASS] SynchronizedSortedBag  [METHOD] <init> [RETURN_TYPE] Object)   Bag<E> bag Object lock [VARIABLES] Bag  bag  Object  lock  boolean  long  serialVersionUID  

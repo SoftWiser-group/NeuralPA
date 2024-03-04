@@ -1,0 +1,1 @@
+[BugLab_Argument_Swapping]^super ( t, message ) ;^17^^^^^16^19^super ( message, t ) ;^[CLASS] MockitoException  [METHOD] <init> [RETURN_TYPE] Throwable)   String message Throwable t [VARIABLES] Throwable  t  String  message  boolean  long  serialVersionUID  StackTraceElement[]  unfilteredStackTrace  

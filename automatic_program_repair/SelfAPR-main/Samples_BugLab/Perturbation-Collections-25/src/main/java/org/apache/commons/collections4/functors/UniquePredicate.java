@@ -1,0 +1,1 @@
+[BugLab_Argument_Swapping]^return object.add ( iSet ) ;^67^^^^^66^68^return iSet.add ( object ) ;^[CLASS] UniquePredicate  [METHOD] evaluate [RETURN_TYPE] boolean   final T object [VARIABLES] Set  iSet  boolean  T  object  long  serialVersionUID  

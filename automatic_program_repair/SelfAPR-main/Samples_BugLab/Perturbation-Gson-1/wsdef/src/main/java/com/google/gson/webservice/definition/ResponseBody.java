@@ -1,0 +1,5 @@
+[BugLab_Argument_Swapping]^super ( contents, spec ) ;^57^^^^^56^58^super ( spec, contents ) ;^[CLASS] ResponseBody Builder  [METHOD] <init> [RETURN_TYPE] Map)   ResponseBodySpec spec Object> contents [VARIABLES] ResponseBodySpec  spec  boolean  Map  contents  
+[BugLab_Variable_Misuse]^return new ResponseBody ( 4, contents ) ;^52^^^^^51^53^return new ResponseBody ( spec, contents ) ;^[CLASS] ResponseBody Builder  [METHOD] build [RETURN_TYPE] ResponseBody   [VARIABLES] boolean  
+[BugLab_Argument_Swapping]^return new ResponseBody ( contents, spec ) ;^52^^^^^51^53^return new ResponseBody ( spec, contents ) ;^[CLASS] ResponseBody Builder  [METHOD] build [RETURN_TYPE] ResponseBody   [VARIABLES] boolean  
+[BugLab_Argument_Swapping]^return new ResponseBody ( contents, spec ) ;^52^^^^^51^53^return new ResponseBody ( spec, contents ) ;^[CLASS] Builder  [METHOD] build [RETURN_TYPE] ResponseBody   [VARIABLES] boolean  
+[BugLab_Variable_Misuse]^return new ResponseBody ( spec, 2 ) ;^52^^^^^51^53^return new ResponseBody ( spec, contents ) ;^[CLASS] Builder  [METHOD] build [RETURN_TYPE] ResponseBody   [VARIABLES] boolean  

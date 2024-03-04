@@ -1,0 +1,2 @@
+[BugLab_Argument_Swapping]^this ( chart, source, ChartChangeEventType.GENERAL ) ;^82^^^^^81^83^this ( source, chart, ChartChangeEventType.GENERAL ) ;^[CLASS] ChartChangeEvent  [METHOD] <init> [RETURN_TYPE] JFreeChart)   Object source JFreeChart chart [VARIABLES] ChartChangeEventType  type  Object  source  boolean  JFreeChart  chart  
+[BugLab_Variable_Misuse]^return type;^124^^^^^123^125^return this.type;^[CLASS] ChartChangeEvent  [METHOD] getType [RETURN_TYPE] ChartChangeEventType   [VARIABLES] ChartChangeEventType  type  JFreeChart  chart  boolean  

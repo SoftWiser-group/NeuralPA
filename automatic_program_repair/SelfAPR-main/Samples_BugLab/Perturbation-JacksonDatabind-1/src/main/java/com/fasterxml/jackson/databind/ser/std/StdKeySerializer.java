@@ -1,0 +1,1 @@
+[BugLab_Wrong_Operator]^if  ( value  !=  Date )  {^31^^^^^28^36^if  ( value instanceof Date )  {^[CLASS] StdKeySerializer  [METHOD] serialize [RETURN_TYPE] void   Object value JsonGenerator jgen SerializerProvider provider [VARIABLES] JsonGenerator  jgen  Object  value  boolean  SerializerProvider  provider  StdKeySerializer  instace  

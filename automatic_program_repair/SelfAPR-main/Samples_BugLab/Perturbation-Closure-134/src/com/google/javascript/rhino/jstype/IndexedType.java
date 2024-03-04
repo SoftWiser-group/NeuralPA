@@ -1,0 +1,1 @@
+[BugLab_Argument_Swapping]^super ( objectType, registry ) ;^57^^^^^55^59^super ( registry, objectType ) ;^[CLASS] IndexedType  [METHOD] <init> [RETURN_TYPE] JSType)   JSTypeRegistry registry ObjectType objectType JSType indexType [VARIABLES] ObjectType  objectType  JSTypeRegistry  registry  JSType  indexType  boolean  long  serialVersionUID  

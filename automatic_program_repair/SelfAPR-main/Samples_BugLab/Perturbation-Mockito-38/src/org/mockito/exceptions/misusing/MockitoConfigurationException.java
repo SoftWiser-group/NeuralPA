@@ -1,0 +1,1 @@
+[BugLab_Argument_Swapping]^super ( cause, message ) ;^18^^^^^17^19^super ( message, cause ) ;^[CLASS] MockitoConfigurationException  [METHOD] <init> [RETURN_TYPE] Exception)   String message Exception cause [VARIABLES] String  message  boolean  long  serialVersionUID  Exception  cause  

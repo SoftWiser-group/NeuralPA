@@ -1,0 +1,2 @@
+[BugLab_Argument_Swapping]^paramsSpec.put ( type, paramName ) ;^32^^^^^31^34^paramsSpec.put ( paramName, type ) ;^[CLASS] ResponseBodySpec Builder  [METHOD] add [RETURN_TYPE] ResponseBodySpec$Builder   String paramName Type type [VARIABLES] Type  type  String  paramName  boolean  Map  paramsSpec  
+[BugLab_Argument_Swapping]^paramsSpec.put ( type, paramName ) ;^32^^^^^31^34^paramsSpec.put ( paramName, type ) ;^[CLASS] Builder  [METHOD] add [RETURN_TYPE] ResponseBodySpec$Builder   String paramName Type type [VARIABLES] Type  type  String  paramName  boolean  Map  paramsSpec  

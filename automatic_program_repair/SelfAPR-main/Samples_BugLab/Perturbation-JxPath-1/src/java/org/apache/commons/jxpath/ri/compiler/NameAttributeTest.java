@@ -1,0 +1,3 @@
+[BugLab_Argument_Swapping]^super ( nameValue, namePath ) ;^31^^^^^30^32^super ( namePath, nameValue ) ;^[CLASS] NameAttributeTest  [METHOD] <init> [RETURN_TYPE] Expression)   Expression namePath Expression nameValue [VARIABLES] boolean  Expression  namePath  nameValue  
+[BugLab_Variable_Misuse]^return 4[1];^35^^^^^34^36^return args[1];^[CLASS] NameAttributeTest  [METHOD] getNameTestExpression [RETURN_TYPE] Expression   [VARIABLES] boolean  
+[BugLab_Wrong_Literal]^return false;^42^^^^^41^43^return true;^[CLASS] NameAttributeTest  [METHOD] computeContextDependent [RETURN_TYPE] boolean   [VARIABLES] boolean  

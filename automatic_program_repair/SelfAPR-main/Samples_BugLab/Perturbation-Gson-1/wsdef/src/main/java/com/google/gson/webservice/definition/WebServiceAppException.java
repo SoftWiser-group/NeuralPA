@@ -1,0 +1,1 @@
+[BugLab_Argument_Swapping]^super ( cause, msg ) ;^35^^^^^34^36^super ( msg, cause ) ;^[CLASS] WebServiceAppException  [METHOD] <init> [RETURN_TYPE] Exception)   String msg Exception cause [VARIABLES] String  msg  boolean  long  serialVersionUID  Exception  cause  

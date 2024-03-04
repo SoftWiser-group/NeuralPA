@@ -1,0 +1,1 @@
+[BugLab_Wrong_Operator]^if  ( mock != null )  {^27^^^^^24^37^if  ( mock == null )  {^[CLASS] StubberImpl  [METHOD] when [RETURN_TYPE] <T>   T mock [VARIABLES] List  answers  boolean  T  mock  MockUtil  mockUtil  Reporter  reporter  

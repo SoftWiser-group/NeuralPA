@@ -1,0 +1,1 @@
+[BugLab_Argument_Swapping]^super ( rootCause, msg ) ;^69^^^^^68^70^super ( msg, rootCause ) ;^[CLASS] FunctorException  [METHOD] <init> [RETURN_TYPE] Throwable)   String msg Throwable rootCause [VARIABLES] Throwable  rootCause  String  msg  boolean  long  serialVersionUID  

@@ -1,0 +1,2 @@
+[BugLab_Argument_Swapping]^return Enum.getEnum ( name, enumClass ) ;^55^^^^^54^56^return Enum.getEnum ( enumClass, name ) ;^[CLASS] EnumUtils  [METHOD] getEnum [RETURN_TYPE] Enum   Class enumClass String name [VARIABLES] boolean  Class  enumClass  String  name  
+[BugLab_Argument_Swapping]^return  ( ValuedEnum )  ValuedEnum.getEnum ( value, enumClass ) ;^67^^^^^66^68^return  ( ValuedEnum )  ValuedEnum.getEnum ( enumClass, value ) ;^[CLASS] EnumUtils  [METHOD] getEnum [RETURN_TYPE] ValuedEnum   Class enumClass int value [VARIABLES] boolean  Class  enumClass  int  value  

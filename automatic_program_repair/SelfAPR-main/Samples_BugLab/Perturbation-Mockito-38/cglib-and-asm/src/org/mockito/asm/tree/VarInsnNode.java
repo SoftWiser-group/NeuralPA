@@ -1,0 +1,4 @@
+[BugLab_Variable_Misuse]^this.var = opcode;^62^^^^^60^63^this.var = var;^[CLASS] VarInsnNode  [METHOD] <init> [RETURN_TYPE] VarInsnNode(int,int)   final int opcode final int var [VARIABLES] int  opcode  var  boolean  
+[BugLab_Variable_Misuse]^this.opcode = var;^73^^^^^72^74^this.opcode = opcode;^[CLASS] VarInsnNode  [METHOD] setOpcode [RETURN_TYPE] void   final int opcode [VARIABLES] int  opcode  var  boolean  
+[BugLab_Argument_Swapping]^mv.visitVarInsn ( var, opcode ) ;^81^^^^^80^82^mv.visitVarInsn ( opcode, var ) ;^[CLASS] VarInsnNode  [METHOD] accept [RETURN_TYPE] void   MethodVisitor mv [VARIABLES] int  opcode  var  MethodVisitor  mv  boolean  
+[BugLab_Argument_Swapping]^return new VarInsnNode ( var, opcode ) ;^85^^^^^84^86^return new VarInsnNode ( opcode, var ) ;^[CLASS] VarInsnNode  [METHOD] clone [RETURN_TYPE] AbstractInsnNode   Map labels [VARIABLES] Map  labels  int  opcode  var  boolean  

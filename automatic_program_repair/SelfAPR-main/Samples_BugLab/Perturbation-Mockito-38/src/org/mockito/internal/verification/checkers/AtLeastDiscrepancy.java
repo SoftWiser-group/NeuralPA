@@ -1,0 +1,2 @@
+[BugLab_Argument_Swapping]^super ( actualCount, wantedCount ) ;^12^^^^^11^13^super ( wantedCount, actualCount ) ;^[CLASS] AtLeastDiscrepancy  [METHOD] <init> [RETURN_TYPE] AtLeastDiscrepancy(int,int)   int wantedCount int actualCount [VARIABLES] boolean  int  actualCount  wantedCount  
+[BugLab_Wrong_Operator]^return "*at least* " + super.getPluralizedWantedCount (  |  ) ;^17^^^^^16^18^return "*at least* " + super.getPluralizedWantedCount (  ) ;^[CLASS] AtLeastDiscrepancy  [METHOD] getPluralizedWantedCount [RETURN_TYPE] String   [VARIABLES] boolean  
