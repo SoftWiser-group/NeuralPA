@@ -1,0 +1,1 @@
+python train.py /home/lyf/code/GraphTyper/data/toy/graph-dataset-split/train /home/lyf/code/GraphTyper/data/toy/graph-dataset-split/valid /home/lyf/code/GraphTyper/data/toy/graph-dataset-split/test /home/lyf/code/GraphTyper/model/graph2hybridmetric_toy.pkl.gz
