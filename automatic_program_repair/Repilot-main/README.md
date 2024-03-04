@@ -8,11 +8,7 @@
 
 ESEC/FSE'23 paper "Copiloting the Copilot: Fusing Large Language Models with Completion Engines for Automated Program Repair"
 
-<picture>
-  <source media="(prefers-color-scheme: light)" srcset="/assets/Repilot-Demo-Light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="/assets/Repilot-Demo-Dark.svg">
-  <img alt="Repilot Demo" src="/assets/Repilot-Demo-Light.svg">
-</picture>
+<img alt="Repilot Demo" src="assets/Repilot-Demo-Light.svg">
 
 Repilot利用代码完成引擎和大型语言模型之间的协同作用，由大语言模型生成预测，再由language server剔除不可能的选项，以更有效地生成补丁。
 
