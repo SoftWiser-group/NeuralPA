@@ -65,11 +65,13 @@ BUGLAB共同训练两个模型: (1) BUG Detector，它学习检测和修复代�
 
 	- 该 $min-max$ 问题可以表示为： 
 		$$
-		\max_φ​ \min_θ​\ E_{s∼C}​ [max_{⟨ℓ,ρ⟩∈R^R _s}\ ​ L_{D_θ}​(s[ρ] _ℓ,⟨ℓ,ρ^{−1}⟩)]
-		\\
-		后为了简化max，引入S_φ(s)抽样重写而非计算最大值，即：
-		\\
-		\max_φ​ \min_θ​\ E_{s∼C}​ [E_{<ℓ,ρ>∼S_φ(s)} ​ [L_{D_θ}​(s[ρ] _ℓ,⟨ℓ,ρ^{−1}⟩)]]
+		\max_{\phi} \min_{\theta} E_{s \sim C} \left[ \max_{\langle \ell, \rho \rangle \in R^R_s} L_{D_{\theta}}(s[\rho]_{\ell}, \langle \ell, \rho^{-1} \rangle) \right]
+		$$
+		
+		为了简化 $\max$，引入 $S_{\phi}(s)$ 抽样重写而非计算最大值，即：
+		
+		$$
+		\max_{\phi} \min_{\theta} E_{s \sim C} \left[ E_{\langle \ell, \rho \rangle \sim S_{\phi}(s)} \left[ L_{D_{\theta}}(s[\rho]_{\ell}, \langle \ell, \rho^{-1} \rangle) \right] \right]
 		$$
 		
 		> - *φ* 是bug选择器模型的参数。 
