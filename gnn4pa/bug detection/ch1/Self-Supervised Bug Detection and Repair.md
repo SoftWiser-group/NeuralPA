@@ -119,7 +119,7 @@ BUGLAB共同训练两个模型: (1) BUG Detector，它学习检测和修复代�
 	- **ReturnsFrom**：连接函数定义和它包含的返回语句。
 	- **OccurrenceOf**：连接变量的使用和它所引用的Symbol。
 
-	![PYBUGLAB rewrites](Self-Supervised%20Bug%20Detection%20and%20Repair.assets/PYBUGLAB%20rewrites.png)
+	![PYBUGLAB rewrites](Self-Supervised%20Bug%20Detection%20and%20Repair.assets/PYBUGLAB_rewrites.png)
 
 - **上下文化（Contextualization）**
 
