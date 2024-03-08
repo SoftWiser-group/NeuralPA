@@ -59,13 +59,9 @@ BUGLAB共同训练两个模型: (1) BUG Detector，它学习检测和修复代�
 
 - **优化目标**：BUGLAB的训练目标是一个min-max问题，即bug选择器试图生成最难被bug检测器发现的bug，而bug检测器则试图最小化在修复这些bug时的损失。
 
-	- 该 $min-max$ 问题可以表示为：  
+	- 该 $min-max$ 问题可以表示为： $\max_{\phi} \min_{\theta} E_{s \sim C} \left[ \max_{\langle \ell, \rho \rangle \in R^R_s} L_{D_{\theta}}(s[\rho]_{\ell}, \langle \ell, \rho^{-1} \rangle)  \right]$
 		
-		 								$\max_{\phi} \min_{\theta} E_{s \sim C} \left[ \max_{\langle \ell, \rho \rangle \in R^R_s} L_{D_{\theta}}(s[\rho]_{\ell}, \langle \ell, \rho^{-1} \rangle)  \right]$
-		
-		为了简化 $\max$，引入 $S_{\phi}(s)$ 抽样重写而非计算最大值，即： 
-		
-		 								$\max_{\phi} \min_{\theta} E_{s \sim C} \left[ E_{\langle \ell, \rho \rangle \sim S_{\phi}(s)} \left[ L_{D_{\theta}}(s[\rho]_{\ell}, \langle \ell, \rho^{-1} \rangle)  \right] \right]$
+		为了简化 $\max$，引入 $S_{\phi}(s)$ 抽样重写而非计算最大值，即： $\max_{\phi} \min_{\theta} E_{s \sim C} \left[ E_{\langle \ell, \rho \rangle \sim S_{\phi}(s)} \left[ L_{D_{\theta}}(s[\rho]_{\ell}, \langle \ell, \rho^{-1} \rangle)  \right] \right]$
 		
 		> - *φ* 是bug选择器模型的参数。 
 		> - *θ* 是bug检测器模型的参数。
