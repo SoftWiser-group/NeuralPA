@@ -8,8 +8,6 @@
 
 BUGLAB共同训练两个模型: (1) BUG Detector，它学习检测和修复代码中的错误; (2) BUG Selector，它学习创建有错误的代码，供检测器用作训练数据。在包含2374个真实bug的测试数据集上，BUGLAB的Python实现在基线方法上提高了30%，并在开源软件中发现了19个以前未知的bug。
 
-+++
-
 ## INTRODUCTION
 
 + *BUGLAB* 的提出背景
@@ -19,8 +17,6 @@ BUGLAB共同训练两个模型: (1) BUG Detector，它学习检测和修复代�
 	+ bug detector +selector
 	+ 神经网络结构（GNN,GREAT）
 	+ 在*PYPIBUGS* 测试集上更高性能，但假阳性过高
-
-+++
 
 ## Self-Supervised Bug Detection
 
@@ -63,15 +59,15 @@ BUGLAB共同训练两个模型: (1) BUG Detector，它学习检测和修复代�
 
 - **优化目标**：BUGLAB的训练目标是一个min-max问题，即bug选择器试图生成最难被bug检测器发现的bug，而bug检测器则试图最小化在修复这些bug时的损失。
 
-	- 该 $min-max$ 问题可以表示为： 
+	- 该 $min-max$ 问题可以表示为：  
 		$$
-		\max_{\phi} \min_{\theta} E_{s \sim C} \left[ \max_{\langle \ell, \rho \rangle \in R^R_s} L_{D_{\theta}}(s[\rho]_{\ell}, \langle \ell, \rho^{-1} \rangle) \right]
+		\max_{\phi} \min_{\theta} E_{s \sim C} \left[ \max_{\langle \ell, \rho \rangle \in R^R_s} L_{D_{\theta}}(s[\rho]_{\ell}, \langle \ell, \rho^{-1} \rangle)  \right]
 		$$
 		
-		为了简化 $\max$，引入 $S_{\phi}(s)$ 抽样重写而非计算最大值，即：
+		为了简化 $\max$，引入 $S_{\phi}(s)$ 抽样重写而非计算最大值，即： 
 		
 		$$
-		\max_{\phi} \min_{\theta} E_{s \sim C} \left[ E_{\langle \ell, \rho \rangle \sim S_{\phi}(s)} \left[ L_{D_{\theta}}(s[\rho]_{\ell}, \langle \ell, \rho^{-1} \rangle) \right] \right]
+		\max_{\phi} \min_{\theta} E_{s \sim C} \left[ E_{\langle \ell, \rho \rangle \sim S_{\phi}(s)} \left[ L_{D_{\theta}}(s[\rho]_{\ell}, \langle \ell, \rho^{-1} \rangle)  \right] \right]
 		$$
 		
 		> - *φ* 是bug选择器模型的参数。 
@@ -88,8 +84,6 @@ BUGLAB共同训练两个模型: (1) BUG Detector，它学习检测和修复代�
 		- **bug检测器（minθ）**：试图最小化这个损失，即提高其检测和修复bug的能力。它通过学习如何正确地识别和修复bug来实现这一点。
 	
 	- 从某种程度上， $S$  与 $D$ 是对称的，故在下面的神经网络建模时，忽略 $S$ 只考虑 $D$。
-
-+++
 
 ## Neural Models
 
@@ -169,8 +163,6 @@ $p(⟨ℓ,ρ⟩∣s,R^R_s)=p_{loc}(ℓ∣s,R^R_s)⋅p_{rew}(ρ∣ℓ,s,R^R_s)$
 - **bug选择器**：尝试生成那些使得bug检测器损失最大化的bug。它会根据这个概率模型选择难以检测的bug位置和重写规则。
 - **bug检测器**：尝试最小化在修复bug时的损失。它会学习如何准确地预测bug的位置和正确的重写规则。
 
-+++
-
 ## A Python Implementation
 
 > BUGLAB系统在Python语言上的实现，即PYBUGLAB。其专注于处理所谓的“简单愚蠢的bug”，这些bug通常容易被开发者忽略，但修复后能显著提高代码质量。
@@ -201,8 +193,6 @@ PYBUGLAB的训练过程被实现为一组异步通信的进程。所有描述的
 
 为了近似训练目标，PYBUGLAB在训练选择器模型时，会根据检测器模型在上一轮训练中的损失来识别最难检测的样本，并训练选择器模型以产生这样的样本。
 
-+++
-
 ## Evaluation
 
 > 此处贴上论文结果评估，复现时根据结果在进行总结修改
@@ -221,8 +211,6 @@ PYBUGLAB的训练过程被实现为一组异步通信的进程。所有描述的
 
 - **警告的检查**：研究者们对PYBUGLAB在PyPI包中发现的警告进行了定性分析。他们发现，虽然PYBUGLAB能够检测到一些真实的bug，但也产生了许多假阳性（false positives）。
 - **bug类型分析**：研究者们还分析了PYBUGLAB在不同类型bug上的表现。他们发现，检测和修复真实世界bug比处理随机插入的bug要困难得多。
-
-+++
 
 ## Model Architecture
 
