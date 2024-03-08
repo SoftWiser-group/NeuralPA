@@ -10,7 +10,7 @@ GNN4bug detection
 
 ## 论文整理
 
-+ [Self-Supervised Bug Detection and Repair](ch1/Self-Supervised Bug Detection and Repair.md)
++ [Self-Supervised Bug Detection and Repair](ch1/Self-Supervised_Bug_Detection_and_Repair.md)
 + [HOPPITY: LEARNING GRAPH TRANSFORMATIONS TO DETECT AND FIX BUGS IN PROGRAMS](ch1/HOPPITY.md)
 + 对比总结
   - Hoppity 专注于通过图转换操作直接修复程序中的错误，而 BUGLAB 则侧重于通过自监督学习提高 bug 检测和修复的泛化能力。

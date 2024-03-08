@@ -43,19 +43,19 @@ BUGLAB共同训练两个模型: (1) BUG Detector，它学习检测和修复代�
 
 ### BUGLAB
 
-![BUGLAB](Self-Supervised Bug Detection and Repair.assets/BUGLAB.png)
+![BUGLAB](Self-Supervised%20Bug%20Detection%20and%20Repair.assets/BUGLAB.png)
 
 > 概述:*Bug Selector*($S_φ$) 决定将哪个(错误的)重写应用于输入代码片段。然后，*Bug Detector*($D_θ$) 试图定位并修复插入的错误(如果插入了一个错误)。
 
 #### Bug选择器（Bug Selector）
 
-- bug选择器的职责是创建带有bug的代码样本。它通过应用预定义的[代码重写规则](# Code Rewriting)来修改原始代码，从而生成新的、含有bug的代码版本。
+- bug选择器的职责是创建带有bug的代码样本。它通过应用预定义的[代码重写规则](# Code%20Rewriting)来修改原始代码，从而生成新的、含有bug的代码版本。
 - bug选择器会从一组可能的重写规则中选择一个或多个规则，然后应用到原始代码的特定位置。这个过程是随机的，但也可以是有策略的，目的是生成尽可能难以检测的bug。
 
 #### Bug检测器（Bug Detector）
 
 - bug检测器的目标是识别bug选择器生成的带有bug的代码，并预测如何修复这些bug。
-- bug检测器通过分析带有bug的代码样本来学习如何定位bug的位置，并预测正确的修复方法。这通常涉及到对代码的表示（如使用[图神经网络]()）和对[重写规则的应用](# Code Rewriting)。
+- bug检测器通过分析带有bug的代码样本来学习如何定位bug的位置，并预测正确的修复方法。这通常涉及到对代码的表示（如使用[图神经网络](# Neural%20Models)）和对[重写规则的应用](# Code%20Rewriting)。
 
 #### 自监督学习过程
 
@@ -119,7 +119,7 @@ BUGLAB共同训练两个模型: (1) BUG Detector，它学习检测和修复代�
 	- **ReturnsFrom**：连接函数定义和它包含的返回语句。
 	- **OccurrenceOf**：连接变量的使用和它所引用的Symbol。
 
-	![PYBUGLAB rewrites](Self-Supervised Bug Detection and Repair.assets/PYBUGLAB rewrites.png)
+	![PYBUGLAB rewrites](Self-Supervised%20Bug%20Detection%20and%20Repair.assets/PYBUGLAB rewrites.png)
 
 - **上下文化（Contextualization）**
 
@@ -213,7 +213,7 @@ PYBUGLAB的训练过程被实现为一组异步通信的进程。所有描述的
 
 - **结果**：PYBUGLAB和PYBUGLAB +Aug在RANDOMBUGS和PYPIBUGS测试集上的性能优于其他训练策略。这表明PYBUGLAB训练框架能够产生更精确的bug检测器。
 
-	![evaluation1](Self-Supervised Bug Detection and Repair.assets/evaluation1.png)
+	![evaluation1](Self-Supervised%20Bug%20Detection%20and%20Repair.assets/evaluation1.png)
 
 ### 定性分析
 
