@@ -43,7 +43,7 @@ BUGLAB共同训练两个模型: (1) BUG Detector，它学习检测和修复代�
 
 ### BUGLAB
 
-![BUGLAB](../PNGs/BUGLAB.png)
+![BUGLAB](Self-Supervised Bug Detection and Repair.assets/BUGLAB.png)
 
 > 概述:*Bug Selector*($S_φ$) 决定将哪个(错误的)重写应用于输入代码片段。然后，*Bug Detector*($D_θ$) 试图定位并修复插入的错误(如果插入了一个错误)。
 
@@ -119,7 +119,7 @@ BUGLAB共同训练两个模型: (1) BUG Detector，它学习检测和修复代�
 	- **ReturnsFrom**：连接函数定义和它包含的返回语句。
 	- **OccurrenceOf**：连接变量的使用和它所引用的Symbol。
 
-	![PYBUGLAB](../PNGs/PYBUGLAB rewrites.png)
+	![PYBUGLAB rewrites](Self-Supervised Bug Detection and Repair.assets/PYBUGLAB rewrites.png)
 
 - **上下文化（Contextualization）**
 
@@ -213,7 +213,7 @@ PYBUGLAB的训练过程被实现为一组异步通信的进程。所有描述的
 
 - **结果**：PYBUGLAB和PYBUGLAB +Aug在RANDOMBUGS和PYPIBUGS测试集上的性能优于其他训练策略。这表明PYBUGLAB训练框架能够产生更精确的bug检测器。
 
-	![evaluation1](../PNGs/evaluation1.png)
+	![evaluation1](Self-Supervised Bug Detection and Repair.assets/evaluation1.png)
 
 ### 定性分析
 
