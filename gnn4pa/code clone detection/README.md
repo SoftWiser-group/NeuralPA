@@ -96,7 +96,7 @@ $h_i^{t+1}=\sigma\left( \sum_{j \in \mathcal{N} } \alpha_{ij} Wh_j\right)$
 
 funcGNN通过学习CFG的嵌入向量来预测程序对之间的图编辑距离(Graph Edit Distance, GED)，然后根据GED估计代码之间的相似度。
 
-![image-20240307224154454](https://github.com/StonerShaw/NeuralPA/main/gnn4pa/code%20clone%20detection/image-20240307224154454.png)
+![image-20240307224154454](images/image-20240307224154454.png)
 
 #### 方法
 
@@ -114,7 +114,7 @@ funcGNN分为自顶向下与自顶向上两种方法。首先使用GraphSAGE为C
 
 在[^2] 中，作者提出了结合图神经网络（GNN）和流增强的抽象语法树（FA-AST）来检测代码克隆。FA-AST是一种新型的代码表示方法，它在传统的AST基础上增加了控制流和数据流的信息，以更全面地捕捉代码的语义。
 
-![image-20240307225742648](https://github.com/StonerShaw/NeuralPA/main/gnn4pa/code%20clone%20detection/image-20240307225742648.png)
+![image-20240307225742648](images/image-20240307225742648.png)
 
 #### 方法
 
@@ -126,9 +126,9 @@ funcGNN分为自顶向下与自顶向上两种方法。首先使用GraphSAGE为C
 
 文章对比了使用两种GNN进行图嵌入的效果：GGNN(Graph Gated Neural Network)与GMN(Graph Matching Network)。在BigCloneBench数据集上，FA-AST+GMN取得了比FA-AST+GGNN更高的准确率、召回率与F1分数。
 
-![image-20240307231634857](https://github.com/StonerShaw/NeuralPA/main/gnn4pa/code%20clone%20detection/image-20240307231634857.png)
+![image-20240307231634857](images/image-20240307231634857.png)
 
-![image-20240307231733010](https://github.com/StonerShaw/NeuralPA/main/gnn4pa/code%20clone%20detection/image-20240307231733010.png)
+![image-20240307231733010](images/image-20240307231733010.png)
 
 
 
@@ -136,13 +136,13 @@ funcGNN分为自顶向下与自顶向上两种方法。首先使用GraphSAGE为C
 
  [^3]的动机在于，现有的代码克隆检测方法利用代码表示不充分，无法有效学习到语义信息。CFG与PDF虽然可以表示代码的控制流与执行流，但大粒度的节点做one-hot 或随机初始化会导致丢失节点内部的局部语义。因此提出了PNIAT layer以捕捉节点内部的语义信息。
 
-![image-20240307235843892](https://github.com/StonerShaw/NeuralPA/main/gnn4pa/code%20clone%20detection/image-20240307235843892.png)
+![image-20240307235843892](images/image-20240307235843892.png)
 
 #### 方法
 
 ##### 预处理
 
-![image-20240308000553700](https://github.com/StonerShaw/NeuralPA/main/gnn4pa/code%20clone%20detection/image-20240308000553700.png)
+![image-20240308000553700](images/image-20240308000553700.png)
 
 在预处理阶段，会保存CFG/PDG的节点与边对应的label，并做word embedding。此时可以发现节点的feature形状由于token数量不同而不一致，这个问题会在PNIAT中解决。
 
@@ -154,7 +154,7 @@ PNIAT通过在节点内利用多头共享注意力机制(Shared Attentional Mech
 
 在完成了节点的初始嵌入后，使用两层GAT与EdgePooling提取高级特征。其中GAT主要负责节点与邻居之间的信息传递，EdgePooling负责合并节点实现池化。
 
-![image-20240308004629777](https://github.com/StonerShaw/NeuralPA/main/gnn4pa/code%20clone%20detection/image-20240308004629777.png)
+![image-20240308004629777](images/image-20240308004629777.png)
 
 最后通过GlobalAttention作为读出函数获取整张图的图嵌入。
 
@@ -162,15 +162,15 @@ PNIAT通过在节点内利用多头共享注意力机制(Shared Attentional Mech
 
 在获取了图嵌入后，相比于直接计算两个图嵌入之间的相似性，本文中使用BiLSTM与线性层组成的二分类器以更加高效与有效地计算两个图嵌入之间关系，而不像大多数方法直接基于距离计算相似度方法需要探索阈值的选择。
 
-![image-20240309151603042](https://github.com/StonerShaw/NeuralPA/main/gnn4pa/code%20clone%20detection/image-20240309151603042.png)
+![image-20240309151603042](images/image-20240309151603042.png)
 
 ### GraphCodeBERT[^4]
 
 由于本模型并非GNN模型，而且属于预训练大模型难以复现，因此只对核心方法做简单介绍。
 
-![image-20240307235640986](https://github.com/StonerShaw/NeuralPA/main/gnn4pa/code%20clone%20detection/image-20240307235640986.png)
+![image-20240307235640986](images/image-20240307235640986.png)
 
-![image-20240307235712599](https://github.com/StonerShaw/NeuralPA/main/gnn4pa/code%20clone%20detection/image-20240307235712599.png)
+![image-20240307235712599](images/image-20240307235712599.png)
 
 
 
