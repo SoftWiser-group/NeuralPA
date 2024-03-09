@@ -38,6 +38,12 @@ This repository aims to summarize and evaluate the graph-based program analysis 
 
 
 # Code Summarization
+| Year | Venue       | Paper                                                        | Code |
+| ---- | ----------- | ------------------------------------------------------------ | ---- |
+| 2016 | ACL   2016 | Summarizing Source Code using a Neural Attention Model |      |
+| 2018 | ICPC  2018 | Deep code comment generation |      |
+| 2021 | ICPC  2021 | Project-Level Encoding for Neural Source Code Summarization of Subroutines |      |
+| 2023 | TSE   2023 | Function Call Graph Context Encoding for Neural Source Code Summarization |      |
 
 
 # Vulnerability Detection?
