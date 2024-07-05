@@ -85,10 +85,10 @@ DeepCom在来自GitHub的9,714个开源项目构建的大规模Java语料库上�
 ①：使用RNNs（G1和G2）处理函数和注释标记，使用函数和注释标记的词嵌入（E1和E2）分别处理。符号⊕表示串联操作。
 $$
 \begin{align*}
-C^{\prime } &= G_{2}(E_{2}(C)) \tag{1} \\\\\\
-T^{\prime } &= G_{1}(E_{1}(T)) \tag{2} \\\\\\
-T^{\prime \prime } &= \text{SoftmaxActivation} \left(\sum _{i=1}^{m} C^{\prime }_{i} T^{\prime }_{i}\right) \tag{3} \\\\\\
-T_{c} &= \sum _{i=1}^{m} T^{\prime \prime }_{i} T^{\prime }_{i} \tag{4} \\\\\\
+C^{\prime } &= G_{2}(E_{2}(C)) \tag{1} \\
+T^{\prime } &= G_{1}(E_{1}(T)) \tag{2} \\
+T^{\prime \prime } &= \text{SoftmaxActivation} \left(\sum _{i=1}^{m} C^{\prime }_{i} T^{\prime }_{i}\right) \tag{3} \\
+T_{c} &= \sum _{i=1}^{m} T^{\prime \prime }_{i} T^{\prime }_{i} \tag{4} \\
 T_{a} &= T_{c} \oplus C^{\prime } \tag{5}
 \end{align*}
 $$
