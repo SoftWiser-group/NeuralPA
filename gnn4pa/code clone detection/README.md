@@ -176,9 +176,13 @@ PNIAT通过在节点内利用多头共享注意力机制(Shared Attentional Mech
 
 GraphCodeBERT的核心思想是将数据流整合进语言模型中，通过代码-变量序列之间的代表数据流关系的边做masked attention，以获得关于语义结构的信息。预训练任务在masked language modeling (MLM)的基础上添加了Edge Prediction和Node Alignment：前者mask 20%在变量序列之间代表依赖关系的边进行pre-train，后者mask 20%在变量序列与代码之间代表标量来源的边进行pre-train。
 
+
+
+
+
 ### 其他[^5]
 
-[^5] 通过计算子图同构的Weisfeiler-Lehman (WL)核方法计算图中相似节点的数量，并根据相似节点的数量计算图的相似度。
+[^5] 通过计算子图同构的Weisfeiler-Lehman (WL)核方法计算图中相似节点的数量，并根据相似节点的数量计算图的相似度。[^17]提出了一种通过zero-shot的跨语言代码克隆检测技术。在使用LLM处理相关问题上，[^18]测试了ChatGPT在zero-shot的情况下对单语言与跨语言克隆检测的性能。[^19]从准确率、耗时、实用性等方面评估了用于克隆检测的无监督方法。
 
 
 
@@ -200,3 +204,6 @@ GraphCodeBERT的核心思想是将数据流整合进语言模型中，通过代�
 [^14]: Will Hamilton, Zhitao Ying, and Jure Leskovec. 2017. Inductive representation learning on large graphs. In Advances in neural information processing systems. 1024–1034.
 [^15]: Y. Li, C. Gu, T. Dullien, O. Vinyals, and P. Kohli, “Graph matching networks for learning the similarity of graph structured objects,” in International Conference on Machine Learning, 2019, pp. 3835–3845.
 [^16]: Petar Veličković, Guillem Cucurull, Arantxa Casanova, Adriana Romero, Pietro Liò, Yoshua Bengio, Graph attention networks, 2018, arXiv:1710.10903 [stat.ML].
+[^17]: Li, Jia, et al. "ZC 3: Zero-Shot Cross-Language Code Clone Detection." *2023 38th IEEE/ACM International Conference on Automated Software Engineering (ASE)*. IEEE, 2023.
+[^18]: Khajezade, Mohamad, et al. "Investigating the Efficacy of Large Language Models for Code Clone Detection." *Proceedings of the 32nd IEEE/ACM International Conference on Program Comprehension*. 2024.
+[^19]: Martinez-Gil, Jorge. "Advanced Detection of Source Code Clones via an Ensemble of Unsupervised Similarity Measures." *arXiv preprint arXiv:2405.02095* (2024).
